@@ -4,7 +4,8 @@ print(my_dict['Anton'])
 print(my_dict.get('Kirill'))
 my_dict.update({'Viktor': 1995,
                 'Irina': 1996})
-del my_dict['Evgeniy']
+deleted_value_ = my_dict.pop('Evgeniy')
+print(deleted_value_)
 print(my_dict)
 # работа с множествами
 my_set = {21, 21, 21, True, 'Fox', True, 21}
